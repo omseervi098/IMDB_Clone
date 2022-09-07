@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/info.css">
+    <script src="https://kit.fontawesome.com/4499aac38f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-1">
+        <div class="container"><a class="navbar-brand d-flex align-items-center logo" href="index.html"><span>IMDb</span></a><button
+                data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <form class="search-form">
+                            <div class="input-group"><span class="input-group-text"><i
+                                        class="fa fa-search"></i></span><input class="form-control" type="text"
+                                    placeholder="I am looking for.."><button class="btn btn-light" type="button">Search
+                                </button></div>
+                        </form>
+                    </li>
+                </ul><a class="btn btn-primary ms-md-2" role="button" href="list.html">Favourites</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+    <!-- Movie Info Cotainer starts -->
+    <div class="container mt-5">
+        <div class="row">
+            <div  id="detail">
+               
+            </div>
+        </div>
+    </div>
+    <!-- Movie Info Cotainer ends -->
+    <script src="js/info.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
