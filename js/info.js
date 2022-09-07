@@ -1,4 +1,4 @@
-const OMDB_API = "https://www.omdbapi.com/?apikey=bcc3ca35&s=spider";
+const OMDB_API = "https://www.omdbapi.com/?apikey=bcc3ca35";
 const moviesInfo = document.getElementById("detail");
 async function info() {
   //get the id of the movie from the url

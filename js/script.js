@@ -1,5 +1,5 @@
 //OMDB API
-const OMDB_API = "https://www.omdbapi.com/?apikey=bcc3ca35&s=spider";
+const OMDB_API = "https://www.omdbapi.com/?apikey=bcc3ca35";
 
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
