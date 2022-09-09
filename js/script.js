@@ -5,8 +5,14 @@ const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 
 //function to fetch data from OMDB API
+let prevval="";
 async function getMovies(val) {
   if (val.length > 2) {
+    //if input val is not changed, do not fetch data
+    if(val==prevval){
+      return;
+    }
+    prevval = val;
     const res = await fetch(`${OMDB_API}&s=${val}`);
     let data = await res.json();
     const movieslist = document.getElementById("movies-list");
@@ -90,9 +96,11 @@ async function getMovies(val) {
 }
 // Event listener for search field
 window.addEventListener("load", () => {
-  searchInput.addEventListener("keyup", () => {
+  searchInput.addEventListener("keyup", (e) => {
+    //Check if values are characters
     getMovies(searchInput.value);
   });
+
   searchButton.addEventListener("click", () => {
     const searchValue = searchInput.value;
     if (searchValue) {
