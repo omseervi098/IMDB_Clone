@@ -2,6 +2,7 @@
 # IMDB CLONE
 
 View this WebPage : https://omseervi098.github.io/IMDB_Clone/
+Redux version of same : htttps://github.com/omseervi098/IMDB-REDUX-
 
 Clone of IMDB using OMDB API
 
